@@ -31,6 +31,15 @@ Alternately, clone the repository and manually invoke `composer` using the shipp
 (The `self-update` directive is to ensure you have an up-to-date `composer.phar`
 available.)
 
+Database
+--------
+
+It user the Postgres database.
+
+In order to use this application you must create a pgsql database and restore the database.sql file into it.
+
+Then you need to rename the file config/autoload/doctrine_orm.local.php.dist to config/autoload/doctrine_orm.local.php and change the parameters to connect to your database
+
 Virtual Host
 ------------
 Afterwards, set up a virtual host to point to the public/ directory of the
