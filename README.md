@@ -23,7 +23,7 @@ Alternately, clone the repository and manually invoke `composer` using the shipp
 `composer.phar`:
 
     cd my/project/dir
-    git clone git://github.com/caferrari/zf2sample.git
+    git clone git://github.com/caferrari/zf2sample.git ZendSkeletonApplication
     cd ZendSkeletonApplication
     php composer.phar self-update
     php composer.phar install
