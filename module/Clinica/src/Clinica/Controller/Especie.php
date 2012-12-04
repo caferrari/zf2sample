@@ -2,7 +2,7 @@
 
 namespace Clinica\Controller;
 
-use Core\Controller\AbstractController;
+use Crud\Controller\AbstractController;
 
 class Especie extends AbstractController
 {

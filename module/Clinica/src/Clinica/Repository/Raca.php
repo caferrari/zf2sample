@@ -2,7 +2,7 @@
 
 namespace Clinica\Repository;
 
-use Core\Repository\AbstractRepository;
+use Crud\Repository\AbstractRepository;
 
 class Raca extends AbstractRepository
 {

@@ -54,7 +54,7 @@ class Module
                                          ->get('ControllerPluginManager')
                                          ->get('flashmessenger');
 
-                    $message = new \Core\View\Helper\FlashMessages;
+                    $message = new \Crud\View\Helper\FlashMessages;
                     $message->setFlashMessager($flashmessenger);
                     return $message ;
                 }

@@ -2,9 +2,8 @@
 
 namespace Clinica\Entity;
 
-use Doctrine\ORM\Mapping as ORM;
-
-use Core\Model\AbstractEntity;
+use Doctrine\ORM\Mapping as ORM,
+    Crud\Model\AbstractEntity;
 
 /**
  * @ORM\Table(name="raca")

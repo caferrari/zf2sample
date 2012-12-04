@@ -1,10 +1,10 @@
 <?php
 return array(
     'modules' => array(
-        'Core',
         'DoctrineModule',
         'DoctrineORMModule',
-        'Clinica'
+        'Clinica',
+        'Crud'
     ),
     'module_listener_options' => array(
         'config_glob_paths'    => array(

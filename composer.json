@@ -7,10 +7,17 @@
         "zf2"
     ],
     "homepage": "http://caferrari.eti.br/",
+    "authors": [
+        {
+            "name": "Carlos André Ferrari",
+            "email": "caferrari@gmail.com"
+        }
+    ],
     "minimum-stability" : "dev",
     "require": {
         "php": ">=5.3.3",
         "zendframework/zendframework": "2.*",
-        "doctrine/doctrine-orm-module": "dev-master"
+        "doctrine/doctrine-orm-module": "dev-master",
+        "caferrari/zf2-simple-crud-module": "dev-master"
     }
 }

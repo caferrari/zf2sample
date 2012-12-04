@@ -2,7 +2,7 @@
 
 namespace Clinica\Form;
 
-use Core\Form\AbstractForm;
+use Crud\Form\AbstractForm;
 
 class Especie extends AbstractForm
 {

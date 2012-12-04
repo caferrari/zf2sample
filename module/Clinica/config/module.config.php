@@ -70,8 +70,8 @@ return array(
     ),
     'view_helpers' => array(
         'invokables' => array(
-            'bootstrapRow' => 'Core\Form\View\Helper\BootstrapRow',
-            'FlashMessages' => 'Core\View\Helper\FlashMessages',
+            'bootstrapRow' => 'Crud\Form\View\Helper\BootstrapRow',
+            'FlashMessages' => 'Crud\View\Helper\FlashMessages',
         )
     )
 );
