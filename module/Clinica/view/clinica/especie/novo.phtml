@@ -1,0 +1,24 @@
+<h2>Espécies</h2>
+<?php
+$form->prepare();
+?>
+
+<?= $this->form()->openTag($form); ?>
+
+<?php if (!$form->get('id')->getValue()): ?>
+<legend>Adicionar uma nova Espécie</legend>
+<?php else: ?>
+<legend>Editar Espécie</legend>
+<?php endif; ?>
+
+<?= $this->flashMessage(); ?>
+
+<?= $this->formHidden($form->get('id')); ?>
+<?= $this->bootstrapRow($form->get('nome')); ?>
+<div class="control-group">
+    <div class="controls">
+    <button class="btn">Salvar</button> ou <a href="">Voltar</a>
+    </div>
+</div>
+
+<?= $this->form()->closeTag(); ?>

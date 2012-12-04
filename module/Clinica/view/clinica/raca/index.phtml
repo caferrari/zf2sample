@@ -1,0 +1,29 @@
+<h2>Raças</h2>
+
+<?php echo $this->flashMessage(); ?>
+
+<div class="btn-toolbar">
+    <div class="btn-group">
+        <a href="<?php echo $this->url('crud', array('controller' => 'raca', 'action' => 'novo')) ?>" class="btn btn-primary">Adicionar</a>
+    </div>
+</div>
+
+<table class="table">
+    <tr>
+        <th>Nome</th>
+        <th>Espécie</th>
+        <th width="80">Ações</th>
+    </tr>
+    <?php foreach ($data as $item): ?>
+    <tr>
+        <td><?= $item->nome ?></td>
+        <td><?= $item->especie->nome ?></td>
+        <td>
+            <a href="<?php echo $this->url('crud', array('controller' => 'raca', 'action' => 'editar', 'id' => $item->id)) ?>" class="btn btn-small" rel="tooltip" title="Editar"><i class="icon-edit"></i></a>
+            <a href="<?php echo $this->url('crud', array('controller' => 'raca', 'action' => 'excluir', 'id' => $item->id)) ?>" class="btn btn-small btn-danger" rel="tooltip" title="Excluir"><i class="icon-remove"></i></a>
+        </td>
+    </tr>
+    <?php endforeach; ?>
+</table>
+
+<?= $this->paginationControl($this->data, 'Sliding', 'paginator') ?>

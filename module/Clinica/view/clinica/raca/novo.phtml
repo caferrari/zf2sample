@@ -1,0 +1,25 @@
+<h2>Raças</h2>
+
+<?php $form->prepare(); ?>
+
+<?= $this->form()->openTag($form); ?>
+
+<?php if (!$form->get('id')->getValue()): ?>
+<legend>Adicionar uma nova Raça</legend>
+<?php else: ?>
+<legend>Editar Raça</legend>
+<?php endif; ?>
+
+<?= $this->flashMessage(); ?>
+
+<?= $this->formHidden($form->get('id')); ?>
+<?= $this->bootstrapRow($form->get('nome')); ?>
+<?= $this->bootstrapRow($form->get('especie')); ?>
+
+<div class="control-group">
+    <div class="controls">
+    <button class="btn">Salvar</button> ou <a href="">Voltar</a>
+    </div>
+</div>
+
+<?= $this->form()->closeTag(); ?>
