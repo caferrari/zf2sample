@@ -9,6 +9,22 @@ class Raca extends InputFilter
 
     public function __construct()
     {
+
+        $this->add(
+            array(
+                'name' => 'id',
+                'required' => false,
+                'validators' => array(
+                    array(
+                        'name' => 'Digits',
+                        'options' => array(
+                            'messages' => array('notDigits' => 'ID inválido')
+                        )
+                    )
+                )
+            )
+        );
+
         $this->add(
             array(
                 'name' => 'nome',

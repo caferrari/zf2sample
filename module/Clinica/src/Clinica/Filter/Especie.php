@@ -12,6 +12,21 @@ class Especie extends InputFilter
 
         $this->add(
             array(
+                'name' => 'id',
+                'required' => false,
+                'validators' => array(
+                    array(
+                        'name' => 'Digits',
+                        'options' => array(
+                            'messages' => array('notDigits' => 'ID inválido')
+                        )
+                    )
+                )
+            )
+        );
+
+        $this->add(
+            array(
                 'name' => 'nome',
                 'required' => true,
                 'filters' => array(
@@ -28,7 +43,6 @@ class Especie extends InputFilter
                 )
             )
         );
-
     }
 
 }
